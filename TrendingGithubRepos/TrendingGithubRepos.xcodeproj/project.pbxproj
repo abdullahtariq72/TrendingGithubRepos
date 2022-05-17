@@ -18,6 +18,12 @@
 		B8474A812832B34300FCE24E /* TrendingGithubReposUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8474A802832B34300FCE24E /* TrendingGithubReposUITestsLaunchTests.swift */; };
 		B8474A952832B79C00FCE24E /* GithubReposModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8474A942832B79B00FCE24E /* GithubReposModel.swift */; };
 		B8474A972832B7E200FCE24E /* GithubRepoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8474A962832B7E200FCE24E /* GithubRepoPresenter.swift */; };
+		B8474A9D2832C2A200FCE24E /* ListShimmerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8474A9C2832C2A200FCE24E /* ListShimmerCell.xib */; };
+		B8474AA02832C83D00FCE24E /* ListShimmerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8474A9F2832C83D00FCE24E /* ListShimmerCell.swift */; };
+		B8474AA22832C88100FCE24E /* RepoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8474AA12832C88100FCE24E /* RepoListTableViewCell.swift */; };
+		B8474AA52832C8F300FCE24E /* RepoListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8474AA42832C8F300FCE24E /* RepoListTableViewCell.xib */; };
+		B85BDE6E2833933F001CFC3C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85BDE6D2833933F001CFC3C /* UIView+Extension.swift */; };
+		B85BDE70283393A3001CFC3C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85BDE6F283393A3001CFC3C /* Constants.swift */; };
 		CE164701A044B10CCAABD046 /* Pods_TrendingGithubRepos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F91DCC6AEFE49CC071A22D1 /* Pods_TrendingGithubRepos.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +55,6 @@
 		B8474A642832B34100FCE24E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8474A662832B34300FCE24E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8474A692832B34300FCE24E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B8474A6B2832B34300FCE24E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8474A702832B34300FCE24E /* TrendingGithubReposTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrendingGithubReposTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8474A742832B34300FCE24E /* TrendingGithubReposTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingGithubReposTests.swift; sourceTree = "<group>"; };
 		B8474A7A2832B34300FCE24E /* TrendingGithubReposUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrendingGithubReposUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +62,13 @@
 		B8474A802832B34300FCE24E /* TrendingGithubReposUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingGithubReposUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B8474A942832B79B00FCE24E /* GithubReposModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubReposModel.swift; sourceTree = "<group>"; };
 		B8474A962832B7E200FCE24E /* GithubRepoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepoPresenter.swift; sourceTree = "<group>"; };
+		B8474A9C2832C2A200FCE24E /* ListShimmerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListShimmerCell.xib; sourceTree = "<group>"; };
+		B8474A9F2832C83D00FCE24E /* ListShimmerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListShimmerCell.swift; sourceTree = "<group>"; };
+		B8474AA12832C88100FCE24E /* RepoListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListTableViewCell.swift; sourceTree = "<group>"; };
+		B8474AA42832C8F300FCE24E /* RepoListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoListTableViewCell.xib; sourceTree = "<group>"; };
+		B85BDE6D2833933F001CFC3C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		B85BDE6F283393A3001CFC3C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B85BDE71283426F7001CFC3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TrendingGithubRepos/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				B8474A5C2832B34100FCE24E /* TrendingGithubRepos */,
+				B8474A662832B34300FCE24E /* Assets.xcassets */,
+				B85BDE71283426F7001CFC3C /* Info.plist */,
+				B8474A682832B34300FCE24E /* LaunchScreen.storyboard */,
 				B8474A732832B34300FCE24E /* TrendingGithubReposTests */,
 				B8474A7D2832B34300FCE24E /* TrendingGithubReposUITests */,
 				B8474A5B2832B34100FCE24E /* Products */,
@@ -130,9 +145,10 @@
 				B8474A5F2832B34100FCE24E /* SceneDelegate.swift */,
 				B8474A8D2832B69200FCE24E /* App */,
 				B8474A8F2832B6BF00FCE24E /* Presenter */,
+				B8474A982832C1F300FCE24E /* NetworkLayer */,
 				B8474A8E2832B6B600FCE24E /* View */,
+				B85BDE6B2833932A001CFC3C /* Helper */,
 				B8474A902832B6D400FCE24E /* Model */,
-				B8474A932832B76500FCE24E /* SupportingFiles */,
 			);
 			path = TrendingGithubRepos;
 			sourceTree = "<group>";
@@ -165,8 +181,10 @@
 		B8474A8E2832B6B600FCE24E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B8474A912832B70B00FCE24E /* TrendingRepoListUI */,
-				B8474A922832B75200FCE24E /* TrendingListViewController */,
+				B8474AA32832C8BE00FCE24E /* NIBs */,
+				B8474A912832B70B00FCE24E /* Storyboard */,
+				B8474A992832C25F00FCE24E /* ListShimmerCell */,
+				B8474A922832B75200FCE24E /* TrendingListViews */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,30 +205,78 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		B8474A912832B70B00FCE24E /* TrendingRepoListUI */ = {
+		B8474A912832B70B00FCE24E /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
 				B8474A632832B34100FCE24E /* Main.storyboard */,
 			);
-			path = TrendingRepoListUI;
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		B8474A922832B75200FCE24E /* TrendingListViewController */ = {
+		B8474A922832B75200FCE24E /* TrendingListViews */ = {
+			isa = PBXGroup;
+			children = (
+				B8474A9E2832C80E00FCE24E /* TableViewCell */,
+				B8474AA62832C90500FCE24E /* ViewController */,
+			);
+			path = TrendingListViews;
+			sourceTree = "<group>";
+		};
+		B8474A982832C1F300FCE24E /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		B8474A992832C25F00FCE24E /* ListShimmerCell */ = {
+			isa = PBXGroup;
+			children = (
+				B8474A9F2832C83D00FCE24E /* ListShimmerCell.swift */,
+			);
+			path = ListShimmerCell;
+			sourceTree = "<group>";
+		};
+		B8474A9E2832C80E00FCE24E /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B8474AA12832C88100FCE24E /* RepoListTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		B8474AA32832C8BE00FCE24E /* NIBs */ = {
+			isa = PBXGroup;
+			children = (
+				B8474A9C2832C2A200FCE24E /* ListShimmerCell.xib */,
+				B8474AA42832C8F300FCE24E /* RepoListTableViewCell.xib */,
+			);
+			path = NIBs;
+			sourceTree = "<group>";
+		};
+		B8474AA62832C90500FCE24E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				B8474A612832B34100FCE24E /* TrendingRepoListVC.swift */,
 			);
-			path = TrendingListViewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
-		B8474A932832B76500FCE24E /* SupportingFiles */ = {
+		B85BDE6B2833932A001CFC3C /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				B8474A662832B34300FCE24E /* Assets.xcassets */,
-				B8474A682832B34300FCE24E /* LaunchScreen.storyboard */,
-				B8474A6B2832B34300FCE24E /* Info.plist */,
+				B85BDE6C28339334001CFC3C /* extensions */,
+				B85BDE6F283393A3001CFC3C /* Constants.swift */,
 			);
-			path = SupportingFiles;
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B85BDE6C28339334001CFC3C /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B85BDE6D2833933F001CFC3C /* UIView+Extension.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +386,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8474A6A2832B34300FCE24E /* LaunchScreen.storyboard in Resources */,
+				B8474AA52832C8F300FCE24E /* RepoListTableViewCell.xib in Resources */,
+				B8474A9D2832C2A200FCE24E /* ListShimmerCell.xib in Resources */,
 				B8474A672832B34300FCE24E /* Assets.xcassets in Resources */,
 				B8474A652832B34100FCE24E /* Main.storyboard in Resources */,
 			);
@@ -390,9 +458,13 @@
 			files = (
 				B8474A622832B34100FCE24E /* TrendingRepoListVC.swift in Sources */,
 				B8474A5E2832B34100FCE24E /* AppDelegate.swift in Sources */,
+				B85BDE6E2833933F001CFC3C /* UIView+Extension.swift in Sources */,
 				B8474A952832B79C00FCE24E /* GithubReposModel.swift in Sources */,
+				B8474AA22832C88100FCE24E /* RepoListTableViewCell.swift in Sources */,
+				B8474AA02832C83D00FCE24E /* ListShimmerCell.swift in Sources */,
 				B8474A972832B7E200FCE24E /* GithubRepoPresenter.swift in Sources */,
 				B8474A602832B34100FCE24E /* SceneDelegate.swift in Sources */,
+				B85BDE70283393A3001CFC3C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +645,7 @@
 				DEVELOPMENT_TEAM = RJ9LXLBCUX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TrendingGithubRepos/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Github Repos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -603,6 +676,7 @@
 				DEVELOPMENT_TEAM = RJ9LXLBCUX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TrendingGithubRepos/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Github Repos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
