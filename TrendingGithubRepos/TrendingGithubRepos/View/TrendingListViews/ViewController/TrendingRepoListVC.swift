@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Lottie
 
 struct SampleModel{
     var name: String = ""
@@ -24,8 +24,7 @@ struct SampleModel{
 
 class TrendingRepoListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    
-    
+
     @IBOutlet weak var repoListTableView: UITableView!
     let refreshControl = UIRefreshControl()
     var isData = false
@@ -37,34 +36,36 @@ class TrendingRepoListVC: UIViewController, UITableViewDataSource, UITableViewDe
         configureTableView()
         configureNibs()
         setupViews()
+        configureLottieAnimation()
+        repoListTableView.isHidden = true
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-            self.isData = true
-            var s = SampleModel(name: "abdllah", heading: "testing", detail: "testing testing", isExpand: false)
-            var s1 = SampleModel(name: "abdllah", heading: "testing", detail: "testing testing", isExpand: false)
-            var s2 = SampleModel(name: "abdllah", heading: "testing", detail: "testing testing", isExpand: false)
-            
-            self.sampledata.append(s)
-            self.sampledata.append(s1)
-            self.sampledata.append(s2)
-            self.sampledata.append(s)
-            self.sampledata.append(s1)
-            self.sampledata.append(s2)
-            self.sampledata.append(s)
-            self.sampledata.append(s1)
-            self.sampledata.append(s2)
-            self.sampledata.append(s)
-            self.sampledata.append(s1)
-            self.sampledata.append(s2)
-            self.sampledata.append(s)
-            self.sampledata.append(s1)
-            self.sampledata.append(s2)
-            self.repoListTableView.reloadData()
-            
-        }
         
     }
     
+    // MARK: - SetupAnimationLogo
+    func configureLottieAnimation(){
+        showErrorView(retryCompletion: {
+            self.repoListTableView.isHidden = false
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                self.isData = true
+                let s = SampleModel(name: "abdllah", heading: "testing", detail: "testing testing", isExpand: false)
+                let s1 = SampleModel(name: "abdllah", heading: "testing", detail: "testing testing", isExpand: false)
+                let s2 = SampleModel(name: "abdllah", heading: "testing", detail: "testing testing", isExpand: false)
+                
+                self.sampledata.append(s)
+                self.sampledata.append(s1)
+                self.sampledata.append(s2)
+                self.repoListTableView.reloadData()
+            }
+            
+            self.hideErrorView()
+        })
+
+    }
+    
+    /**
+     setting up views
+     */
     func setupViews(){
         
         refreshControl.addTarget(self, action:  #selector(refreshData), for: .valueChanged)
@@ -148,3 +149,68 @@ class TrendingRepoListVC: UIViewController, UITableViewDataSource, UITableViewDe
     }
 }
 
+
+extension UIViewController {
+    
+    func showErrorView(retryCompletion: @escaping () -> ()){
+        
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
+        view.tag = Constants.RetryBtnTag
+        let gifView = AnimationView()
+        let animation = Animation.named("retry")
+        gifView.contentMode = .scaleAspectFill
+        gifView.animation = animation
+        gifView.loopMode = .loop
+        gifView.play()
+        view.addSubview(gifView)
+        gifView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            gifView.heightAnchor.constraint(equalToConstant: 300),
+            gifView.widthAnchor.constraint(equalToConstant: 300),
+            gifView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            gifView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+        
+        let retryButton = UIButton()
+        retryButton.clipsToBounds = true
+        retryButton.layer.cornerRadius = 4.0
+        retryButton.layer.borderWidth = 1.0
+        retryButton.layer.borderColor = UIColor.systemGreen.cgColor
+        retryButton.setTitleColor(.systemGreen, for: .normal)
+        retryButton.setTitle(LanguageStrings.retry, for: .normal)
+        retryButton.addAction {
+            retryCompletion()
+        }
+        view.addSubview(retryButton)
+        retryButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            retryButton.heightAnchor.constraint(equalToConstant: 40),
+            retryButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
+            retryButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
+            retryButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -10)
+        ])
+        
+        self.view.addSubview(view)
+
+    }
+    func hideErrorView(){
+        if let viewWithTag = self.view.viewWithTag(Constants.RetryBtnTag) {
+            viewWithTag.removeFromSuperview()
+        }
+    }
+}
+
+extension UIControl {
+    func addAction(for controlEvents: UIControl.Event = .touchUpInside, _ closure: @escaping()->()) {
+        @objc class ClosureSleeve: NSObject {
+            let closure:()->()
+            init(_ closure: @escaping()->()) { self.closure = closure }
+            @objc func invoke() { closure() }
+        }
+        let sleeve = ClosureSleeve(closure)
+        addTarget(sleeve, action: #selector(ClosureSleeve.invoke), for: controlEvents)
+        objc_setAssociatedObject(self, "\(UUID())", sleeve, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+    }
+}

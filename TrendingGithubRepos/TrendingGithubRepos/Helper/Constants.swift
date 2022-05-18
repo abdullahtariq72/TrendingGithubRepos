@@ -7,6 +7,10 @@
 
 import Foundation
 
+struct Constants {
+    static let RetryBtnTag = 101
+}
+
 
 //MARK: NIB NAME
 struct NIB_NAME {

@@ -24,6 +24,8 @@
 		B8474AA52832C8F300FCE24E /* RepoListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8474AA42832C8F300FCE24E /* RepoListTableViewCell.xib */; };
 		B85BDE6E2833933F001CFC3C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85BDE6D2833933F001CFC3C /* UIView+Extension.swift */; };
 		B85BDE70283393A3001CFC3C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85BDE6F283393A3001CFC3C /* Constants.swift */; };
+		B85C4C612834B8670068212F /* retry.json in Resources */ = {isa = PBXBuildFile; fileRef = B85C4C602834B8670068212F /* retry.json */; };
+		B85C4C632834BF930068212F /* LanguageStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C4C622834BF930068212F /* LanguageStrings.swift */; };
 		CE164701A044B10CCAABD046 /* Pods_TrendingGithubRepos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F91DCC6AEFE49CC071A22D1 /* Pods_TrendingGithubRepos.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,8 @@
 		B85BDE6D2833933F001CFC3C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		B85BDE6F283393A3001CFC3C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B85BDE71283426F7001CFC3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TrendingGithubRepos/Info.plist; sourceTree = "<group>"; };
+		B85C4C602834B8670068212F /* retry.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = retry.json; sourceTree = "<group>"; };
+		B85C4C622834BF930068212F /* LanguageStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageStrings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				B8474A5F2832B34100FCE24E /* SceneDelegate.swift */,
+				B85C4C602834B8670068212F /* retry.json */,
 				B8474A8D2832B69200FCE24E /* App */,
 				B8474A8F2832B6BF00FCE24E /* Presenter */,
 				B8474A982832C1F300FCE24E /* NetworkLayer */,
@@ -267,6 +272,7 @@
 			children = (
 				B85BDE6C28339334001CFC3C /* extensions */,
 				B85BDE6F283393A3001CFC3C /* Constants.swift */,
+				B85C4C622834BF930068212F /* LanguageStrings.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -389,6 +395,7 @@
 				B8474AA52832C8F300FCE24E /* RepoListTableViewCell.xib in Resources */,
 				B8474A9D2832C2A200FCE24E /* ListShimmerCell.xib in Resources */,
 				B8474A672832B34300FCE24E /* Assets.xcassets in Resources */,
+				B85C4C612834B8670068212F /* retry.json in Resources */,
 				B8474A652832B34100FCE24E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +471,7 @@
 				B8474AA02832C83D00FCE24E /* ListShimmerCell.swift in Sources */,
 				B8474A972832B7E200FCE24E /* GithubRepoPresenter.swift in Sources */,
 				B8474A602832B34100FCE24E /* SceneDelegate.swift in Sources */,
+				B85C4C632834BF930068212F /* LanguageStrings.swift in Sources */,
 				B85BDE70283393A3001CFC3C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
