@@ -1,0 +1,6 @@
+framework module Pods_TrendingGithubRepos {
+  umbrella header "Pods-TrendingGithubRepos-umbrella.h"
+
+  export *
+  module * { export * }
+}
