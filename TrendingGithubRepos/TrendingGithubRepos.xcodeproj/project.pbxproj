@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		294667A65E51ED44CB83CCE3 /* libPods-TrendingGithubReposUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A069636A7651C6AB19A95A1D /* libPods-TrendingGithubReposUITests.a */; };
+		7FCC22907F65AD5FA7A91071 /* libPods-TrendingGithubReposTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29DDD4B2A476A7A921FD3810 /* libPods-TrendingGithubReposTests.a */; };
 		B8474A5E2832B34100FCE24E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8474A5D2832B34100FCE24E /* AppDelegate.swift */; };
 		B8474A602832B34100FCE24E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8474A5F2832B34100FCE24E /* SceneDelegate.swift */; };
 		B8474A622832B34100FCE24E /* TrendingRepoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8474A612832B34100FCE24E /* TrendingRepoListVC.swift */; };
@@ -26,6 +28,26 @@
 		B85BDE70283393A3001CFC3C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85BDE6F283393A3001CFC3C /* Constants.swift */; };
 		B85C4C612834B8670068212F /* retry.json in Resources */ = {isa = PBXBuildFile; fileRef = B85C4C602834B8670068212F /* retry.json */; };
 		B85C4C632834BF930068212F /* LanguageStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C4C622834BF930068212F /* LanguageStrings.swift */; };
+		B85C4C652835638D0068212F /* APINetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C4C642835638D0068212F /* APINetworkManager.swift */; };
+		B85C4C7C2836816E0068212F /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B85C4C6F2836816E0068212F /* Roboto-Medium.ttf */; };
+		B85C4C7D2836816E0068212F /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B85C4C702836816E0068212F /* Roboto-Light.ttf */; };
+		B85C4C7E2836816E0068212F /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B85C4C712836816E0068212F /* Roboto-Regular.ttf */; };
+		B85C4C7F2836816E0068212F /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B85C4C722836816E0068212F /* Roboto-MediumItalic.ttf */; };
+		B85C4C802836816E0068212F /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B85C4C732836816E0068212F /* Roboto-ThinItalic.ttf */; };
+		B85C4C812836816E0068212F /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B85C4C742836816E0068212F /* Roboto-BoldItalic.ttf */; };
+		B85C4C822836816E0068212F /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B85C4C752836816E0068212F /* Roboto-LightItalic.ttf */; };
+		B85C4C832836816E0068212F /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B85C4C762836816E0068212F /* Roboto-Italic.ttf */; };
+		B85C4C842836816E0068212F /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = B85C4C772836816E0068212F /* LICENSE.txt */; };
+		B85C4C852836816E0068212F /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B85C4C782836816E0068212F /* Roboto-BlackItalic.ttf */; };
+		B85C4C862836816E0068212F /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B85C4C792836816E0068212F /* Roboto-Bold.ttf */; };
+		B85C4C872836816E0068212F /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B85C4C7A2836816E0068212F /* Roboto-Thin.ttf */; };
+		B85C4C882836816E0068212F /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B85C4C7B2836816E0068212F /* Roboto-Black.ttf */; };
+		B85C4C8A283682290068212F /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C4C89283682290068212F /* UILabel+Extension.swift */; };
+		B85C4C8D283687D60068212F /* RepoListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C4C8C283687D60068212F /* RepoListService.swift */; };
+		B85C4C8F2836A36C0068212F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C4C8E2836A36C0068212F /* UIViewController+Extension.swift */; };
+		B85C4C912836A3820068212F /* UIControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C4C902836A3820068212F /* UIControl+Extension.swift */; };
+		B85C4C932836A4C50068212F /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C4C922836A4C50068212F /* NetworkReachability.swift */; };
+		B85C4C952836B3CE0068212F /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85C4C942836B3CE0068212F /* UIImageView+Extension.swift */; };
 		CE164701A044B10CCAABD046 /* Pods_TrendingGithubRepos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F91DCC6AEFE49CC071A22D1 /* Pods_TrendingGithubRepos.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,9 +69,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29DDD4B2A476A7A921FD3810 /* libPods-TrendingGithubReposTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrendingGithubReposTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F64BD33211C8BCCDD9807F0 /* Pods-TrendingGithubReposUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrendingGithubReposUITests.debug.xcconfig"; path = "Target Support Files/Pods-TrendingGithubReposUITests/Pods-TrendingGithubReposUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5CC32ED0D491B83755C1282F /* Pods-TrendingGithubReposTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrendingGithubReposTests.debug.xcconfig"; path = "Target Support Files/Pods-TrendingGithubReposTests/Pods-TrendingGithubReposTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F91DCC6AEFE49CC071A22D1 /* Pods_TrendingGithubRepos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrendingGithubRepos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7654C6F4838129F0F43C394D /* Pods-TrendingGithubRepos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrendingGithubRepos.release.xcconfig"; path = "Target Support Files/Pods-TrendingGithubRepos/Pods-TrendingGithubRepos.release.xcconfig"; sourceTree = "<group>"; };
+		8625A0E3A5A40C6695E24356 /* Pods-TrendingGithubReposUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrendingGithubReposUITests.release.xcconfig"; path = "Target Support Files/Pods-TrendingGithubReposUITests/Pods-TrendingGithubReposUITests.release.xcconfig"; sourceTree = "<group>"; };
 		99FE2F11F6906A208DF6F349 /* Pods-TrendingGithubRepos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrendingGithubRepos.debug.xcconfig"; path = "Target Support Files/Pods-TrendingGithubRepos/Pods-TrendingGithubRepos.debug.xcconfig"; sourceTree = "<group>"; };
+		A069636A7651C6AB19A95A1D /* libPods-TrendingGithubReposUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrendingGithubReposUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8474A5A2832B34100FCE24E /* TrendingGithubRepos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendingGithubRepos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8474A5D2832B34100FCE24E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8474A5F2832B34100FCE24E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +100,28 @@
 		B85BDE71283426F7001CFC3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TrendingGithubRepos/Info.plist; sourceTree = "<group>"; };
 		B85C4C602834B8670068212F /* retry.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = retry.json; sourceTree = "<group>"; };
 		B85C4C622834BF930068212F /* LanguageStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageStrings.swift; sourceTree = "<group>"; };
+		B85C4C642835638D0068212F /* APINetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINetworkManager.swift; sourceTree = "<group>"; };
+		B85C4C6F2836816E0068212F /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		B85C4C702836816E0068212F /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		B85C4C712836816E0068212F /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		B85C4C722836816E0068212F /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		B85C4C732836816E0068212F /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		B85C4C742836816E0068212F /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		B85C4C752836816E0068212F /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		B85C4C762836816E0068212F /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		B85C4C772836816E0068212F /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		B85C4C782836816E0068212F /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		B85C4C792836816E0068212F /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		B85C4C7A2836816E0068212F /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		B85C4C7B2836816E0068212F /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		B85C4C89283682290068212F /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		B85C4C8C283687D60068212F /* RepoListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListService.swift; sourceTree = "<group>"; };
+		B85C4C8E2836A36C0068212F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		B85C4C902836A3820068212F /* UIControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Extension.swift"; sourceTree = "<group>"; };
+		B85C4C922836A4C50068212F /* NetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
+		B85C4C942836B3CE0068212F /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		B85C4C9728379D030068212F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E00D6E77F00C0764375BB80F /* Pods-TrendingGithubReposTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrendingGithubReposTests.release.xcconfig"; path = "Target Support Files/Pods-TrendingGithubReposTests/Pods-TrendingGithubReposTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FCC22907F65AD5FA7A91071 /* libPods-TrendingGithubReposTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				294667A65E51ED44CB83CCE3 /* libPods-TrendingGithubReposUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +157,10 @@
 			children = (
 				99FE2F11F6906A208DF6F349 /* Pods-TrendingGithubRepos.debug.xcconfig */,
 				7654C6F4838129F0F43C394D /* Pods-TrendingGithubRepos.release.xcconfig */,
+				5CC32ED0D491B83755C1282F /* Pods-TrendingGithubReposTests.debug.xcconfig */,
+				E00D6E77F00C0764375BB80F /* Pods-TrendingGithubReposTests.release.xcconfig */,
+				2F64BD33211C8BCCDD9807F0 /* Pods-TrendingGithubReposUITests.debug.xcconfig */,
+				8625A0E3A5A40C6695E24356 /* Pods-TrendingGithubReposUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -113,7 +168,10 @@
 		2B501E45AB81D616C740AF24 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B85C4C9728379D030068212F /* XCTest.framework */,
 				5F91DCC6AEFE49CC071A22D1 /* Pods_TrendingGithubRepos.framework */,
+				29DDD4B2A476A7A921FD3810 /* libPods-TrendingGithubReposTests.a */,
+				A069636A7651C6AB19A95A1D /* libPods-TrendingGithubReposUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -125,6 +183,7 @@
 				B8474A662832B34300FCE24E /* Assets.xcassets */,
 				B85BDE71283426F7001CFC3C /* Info.plist */,
 				B8474A682832B34300FCE24E /* LaunchScreen.storyboard */,
+				B8474A5F2832B34100FCE24E /* SceneDelegate.swift */,
 				B8474A732832B34300FCE24E /* TrendingGithubReposTests */,
 				B8474A7D2832B34300FCE24E /* TrendingGithubReposUITests */,
 				B8474A5B2832B34100FCE24E /* Products */,
@@ -146,10 +205,9 @@
 		B8474A5C2832B34100FCE24E /* TrendingGithubRepos */ = {
 			isa = PBXGroup;
 			children = (
-				B8474A5F2832B34100FCE24E /* SceneDelegate.swift */,
-				B85C4C602834B8670068212F /* retry.json */,
 				B8474A8D2832B69200FCE24E /* App */,
 				B8474A8F2832B6BF00FCE24E /* Presenter */,
+				B85C4C8B283687C20068212F /* DataSource */,
 				B8474A982832C1F300FCE24E /* NetworkLayer */,
 				B8474A8E2832B6B600FCE24E /* View */,
 				B85BDE6B2833932A001CFC3C /* Helper */,
@@ -230,6 +288,8 @@
 		B8474A982832C1F300FCE24E /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				B85C4C922836A4C50068212F /* NetworkReachability.swift */,
+				B85C4C642835638D0068212F /* APINetworkManager.swift */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -270,6 +330,8 @@
 		B85BDE6B2833932A001CFC3C /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				B85C4C9628377E620068212F /* Lottie-Animation */,
+				B85C4C6D2836816E0068212F /* Font */,
 				B85BDE6C28339334001CFC3C /* extensions */,
 				B85BDE6F283393A3001CFC3C /* Constants.swift */,
 				B85C4C622834BF930068212F /* LanguageStrings.swift */,
@@ -281,8 +343,56 @@
 			isa = PBXGroup;
 			children = (
 				B85BDE6D2833933F001CFC3C /* UIView+Extension.swift */,
+				B85C4C89283682290068212F /* UILabel+Extension.swift */,
+				B85C4C8E2836A36C0068212F /* UIViewController+Extension.swift */,
+				B85C4C902836A3820068212F /* UIControl+Extension.swift */,
+				B85C4C942836B3CE0068212F /* UIImageView+Extension.swift */,
 			);
 			path = extensions;
+			sourceTree = "<group>";
+		};
+		B85C4C6D2836816E0068212F /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				B85C4C6E2836816E0068212F /* Roboto */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		B85C4C6E2836816E0068212F /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				B85C4C6F2836816E0068212F /* Roboto-Medium.ttf */,
+				B85C4C702836816E0068212F /* Roboto-Light.ttf */,
+				B85C4C712836816E0068212F /* Roboto-Regular.ttf */,
+				B85C4C722836816E0068212F /* Roboto-MediumItalic.ttf */,
+				B85C4C732836816E0068212F /* Roboto-ThinItalic.ttf */,
+				B85C4C742836816E0068212F /* Roboto-BoldItalic.ttf */,
+				B85C4C752836816E0068212F /* Roboto-LightItalic.ttf */,
+				B85C4C762836816E0068212F /* Roboto-Italic.ttf */,
+				B85C4C772836816E0068212F /* LICENSE.txt */,
+				B85C4C782836816E0068212F /* Roboto-BlackItalic.ttf */,
+				B85C4C792836816E0068212F /* Roboto-Bold.ttf */,
+				B85C4C7A2836816E0068212F /* Roboto-Thin.ttf */,
+				B85C4C7B2836816E0068212F /* Roboto-Black.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		B85C4C8B283687C20068212F /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				B85C4C8C283687D60068212F /* RepoListService.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		B85C4C9628377E620068212F /* Lottie-Animation */ = {
+			isa = PBXGroup;
+			children = (
+				B85C4C602834B8670068212F /* retry.json */,
+			);
+			path = "Lottie-Animation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +421,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8474A872832B34300FCE24E /* Build configuration list for PBXNativeTarget "TrendingGithubReposTests" */;
 			buildPhases = (
+				A564A962CC0EDEA37FA3A841 /* [CP] Check Pods Manifest.lock */,
 				B8474A6C2832B34300FCE24E /* Sources */,
 				B8474A6D2832B34300FCE24E /* Frameworks */,
 				B8474A6E2832B34300FCE24E /* Resources */,
@@ -329,6 +440,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8474A8A2832B34300FCE24E /* Build configuration list for PBXNativeTarget "TrendingGithubReposUITests" */;
 			buildPhases = (
+				40696C001799B674F0B3B73A /* [CP] Check Pods Manifest.lock */,
 				B8474A762832B34300FCE24E /* Sources */,
 				B8474A772832B34300FCE24E /* Frameworks */,
 				B8474A782832B34300FCE24E /* Resources */,
@@ -394,8 +506,21 @@
 				B8474A6A2832B34300FCE24E /* LaunchScreen.storyboard in Resources */,
 				B8474AA52832C8F300FCE24E /* RepoListTableViewCell.xib in Resources */,
 				B8474A9D2832C2A200FCE24E /* ListShimmerCell.xib in Resources */,
+				B85C4C842836816E0068212F /* LICENSE.txt in Resources */,
+				B85C4C802836816E0068212F /* Roboto-ThinItalic.ttf in Resources */,
+				B85C4C822836816E0068212F /* Roboto-LightItalic.ttf in Resources */,
+				B85C4C862836816E0068212F /* Roboto-Bold.ttf in Resources */,
+				B85C4C7C2836816E0068212F /* Roboto-Medium.ttf in Resources */,
+				B85C4C872836816E0068212F /* Roboto-Thin.ttf in Resources */,
+				B85C4C852836816E0068212F /* Roboto-BlackItalic.ttf in Resources */,
 				B8474A672832B34300FCE24E /* Assets.xcassets in Resources */,
+				B85C4C812836816E0068212F /* Roboto-BoldItalic.ttf in Resources */,
 				B85C4C612834B8670068212F /* retry.json in Resources */,
+				B85C4C7F2836816E0068212F /* Roboto-MediumItalic.ttf in Resources */,
+				B85C4C882836816E0068212F /* Roboto-Black.ttf in Resources */,
+				B85C4C7E2836816E0068212F /* Roboto-Regular.ttf in Resources */,
+				B85C4C832836816E0068212F /* Roboto-Italic.ttf in Resources */,
+				B85C4C7D2836816E0068212F /* Roboto-Light.ttf in Resources */,
 				B8474A652832B34100FCE24E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +559,50 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrendingGithubRepos/Pods-TrendingGithubRepos-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		40696C001799B674F0B3B73A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrendingGithubReposUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A564A962CC0EDEA37FA3A841 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrendingGithubReposTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D5086A8498D9984756DFDA75 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -464,15 +633,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8474A622832B34100FCE24E /* TrendingRepoListVC.swift in Sources */,
+				B85C4C912836A3820068212F /* UIControl+Extension.swift in Sources */,
 				B8474A5E2832B34100FCE24E /* AppDelegate.swift in Sources */,
 				B85BDE6E2833933F001CFC3C /* UIView+Extension.swift in Sources */,
 				B8474A952832B79C00FCE24E /* GithubReposModel.swift in Sources */,
+				B85C4C8F2836A36C0068212F /* UIViewController+Extension.swift in Sources */,
+				B85C4C8A283682290068212F /* UILabel+Extension.swift in Sources */,
+				B85C4C652835638D0068212F /* APINetworkManager.swift in Sources */,
 				B8474AA22832C88100FCE24E /* RepoListTableViewCell.swift in Sources */,
 				B8474AA02832C83D00FCE24E /* ListShimmerCell.swift in Sources */,
 				B8474A972832B7E200FCE24E /* GithubRepoPresenter.swift in Sources */,
+				B85C4C8D283687D60068212F /* RepoListService.swift in Sources */,
 				B8474A602832B34100FCE24E /* SceneDelegate.swift in Sources */,
 				B85C4C632834BF930068212F /* LanguageStrings.swift in Sources */,
 				B85BDE70283393A3001CFC3C /* Constants.swift in Sources */,
+				B85C4C952836B3CE0068212F /* UIImageView+Extension.swift in Sources */,
+				B85C4C932836A4C50068212F /* NetworkReachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -706,6 +882,7 @@
 		};
 		B8474A882832B34300FCE24E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CC32ED0D491B83755C1282F /* Pods-TrendingGithubReposTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -726,6 +903,7 @@
 		};
 		B8474A892832B34300FCE24E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E00D6E77F00C0764375BB80F /* Pods-TrendingGithubReposTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -746,6 +924,7 @@
 		};
 		B8474A8B2832B34300FCE24E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F64BD33211C8BCCDD9807F0 /* Pods-TrendingGithubReposUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -764,6 +943,7 @@
 		};
 		B8474A8C2832B34300FCE24E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8625A0E3A5A40C6695E24356 /* Pods-TrendingGithubReposUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

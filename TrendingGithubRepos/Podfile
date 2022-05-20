@@ -9,5 +9,17 @@ target 'TrendingGithubRepos' do
 pod 'Alamofire'
 pod 'lottie-ios'
 
+end
 
+
+
+target 'TrendingGithubReposUITests' do
+  inherit! :search_paths
+  pod 'Alamofire'
+  pod 'lottie-ios'
+end
+
+target 'TrendingGithubReposTests' do
+  pod 'Alamofire'
+  pod 'lottie-ios'
 end

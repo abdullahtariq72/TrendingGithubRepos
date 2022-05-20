@@ -1,0 +1,6 @@
+module Pods_TrendingGithubReposTests {
+  umbrella header "Pods-TrendingGithubReposTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

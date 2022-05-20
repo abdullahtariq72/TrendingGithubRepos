@@ -9,45 +9,80 @@ import UIKit
 
 class RepoListTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var mainContentView: UIView!
-    @IBOutlet weak var detailsLbl: UILabel!
+    
+    //MARK: - IBOutlets
+    @IBOutlet weak var avatarImgView: UIImageView!
+    @IBOutlet weak var userNameLbl: UILabel!
+    @IBOutlet weak var repoNameLbl: UILabel!
+    @IBOutlet weak var repoDetailsLbl: UILabel!
+    @IBOutlet weak var langColorLbl: UILabel!
+    @IBOutlet weak var languageLbl: UILabel!
+    @IBOutlet weak var ratingImgView: UIImageView!
+    @IBOutlet weak var ratingLbl: UILabel!
     @IBOutlet weak var ratingLangView: UIView!
     
-    @IBOutlet weak var langColorLbl: UILabel!
-    @IBOutlet weak var langLbl: UILabel!
-    @IBOutlet weak var ratingLbl: UILabel!
-    
-    var model: SampleModel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        
+        repoDetailsLbl.isHidden = true
+        ratingLangView.isHidden = true
     }
-
     
-    func setUpCell(){
-        
-        detailsLbl.text = "This is testing environment for the app"
-        langLbl.text = "Javascript"
+    //MARK: - resetting up color for dark or light mode
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        setColors()
+    }
+    
+    
+    //MARK: - setting up cell views
+    func setUpCell(dataItem: Item){
+        setupViews(dataItem)
+        dataItem.isExpanded ? showExpandedView() : hideExpandedView()
+    }
+    
+    
+    //MARK: - setting up subviews views
+    func setupViews(_ item: Item){
+        setColors()
+        avatarImgView.clipsToBounds = true
+        avatarImgView.layer.borderWidth = 2.0
+        avatarImgView.layer.cornerRadius = (avatarImgView.frame.size.width ) / 2
+        avatarImgView.loadRemoteImageFrom(urlString: item.owner?.avatarURL ?? "")
+        userNameLbl.configureLabelWith(color: .label, text: item.owner?.login ?? "", size: 14)
+        repoNameLbl.configureLabelWith(color: .label, text: item.name ?? "", size: 16)
+        repoDetailsLbl.configureLabelWith(color: .label, text: item.itemDescription ?? "", size: 12)
+        languageLbl.configureLabelWith(color: .label, text: item.language ?? "", size: 10)
+        ratingLbl.configureLabelWith(color: .label, text: String(item.stargazersCount ?? 0), size: 10)
+        ratingImgView.image = UIImage(named: "rate-star")!.withRenderingMode(.alwaysTemplate)
+        ratingImgView.tintColor = .systemYellow
         langColorLbl.clipsToBounds = true
+        langColorLbl.backgroundColor = Colors.BLUE_COLOR
         langColorLbl.layer.cornerRadius = (langColorLbl.frame.size.width ) / 2
-        ratingLbl.text = "121"
-        
-        guard let model = model else { return}
-        
-        if model.isExpand{
-            detailsLbl.isHidden = false
-            ratingLangView.isHidden = false
-        }else{
-            detailsLbl.isHidden = true
-            ratingLangView.isHidden = true
-        }
         
     }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
+    //MARK: - setting up colors
+    func setColors(){
+        avatarImgView.layer.borderColor =
+        UIColor { traitCollection in
+            switch traitCollection.userInterfaceStyle {
+            case .dark:
+                return Colors.WHITE_COLOR
+            default:
+                return Colors.FULL_BLACK_COLOR
+            }
+        }.cgColor
+    }
+    
+    //MARK: - toggle expanded and unexpanded view
+    func showExpandedView() {
+        repoDetailsLbl.isHidden = false
+        ratingLangView.isHidden = false
+    }
+    
+    func hideExpandedView() {
+        repoDetailsLbl.isHidden = true
+        ratingLangView.isHidden = true
     }
 }
+
