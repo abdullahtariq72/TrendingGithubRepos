@@ -61,11 +61,10 @@ extension UIViewController {
             stackView.spacing = 5.0
             
             let labelError = UILabel()
-            labelError.configureLabelWith(color: .label, text: LanguageStrings.something_went_wrong, size: 20)
+            labelError.configureLabelWith(color: .label, text: LanguageStrings.something_went_wrong, size: 18)
             
             let labelErrorDetail = UILabel()
-            labelErrorDetail.configureLabelWith(color: .secondaryLabel, text: LanguageStrings.blocking_your_signal, size: 16)
-            
+            labelErrorDetail.configureLabelWith(color: .secondaryLabel, text: LanguageStrings.blocking_your_signal, size: 14)
             stackView.addArrangedSubview(labelError)
             stackView.addArrangedSubview(labelErrorDetail)
             
@@ -73,6 +72,7 @@ extension UIViewController {
             stackView.translatesAutoresizingMaskIntoConstraints = false
             
             NSLayoutConstraint.activate([
+                
                 stackView.heightAnchor.constraint(equalToConstant: 60),
                 stackView.topAnchor.constraint(equalTo: gifView.bottomAnchor, constant: 20),
                 stackView.leadingAnchor.constraint(equalTo: subView.leadingAnchor, constant: 10),
