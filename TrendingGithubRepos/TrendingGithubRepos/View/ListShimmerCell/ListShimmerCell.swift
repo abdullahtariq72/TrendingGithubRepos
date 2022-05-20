@@ -17,7 +17,10 @@ class ListShimmerCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-
+    }
+    
+    //MARK: - setting up cell views
+    func setUpCell(){
         nameLbl.clipsToBounds = true
         imgView.clipsToBounds = true
         detailLbl.clipsToBounds = true
@@ -26,14 +29,6 @@ class ListShimmerCell: UITableViewCell {
         imgView.layer.cornerRadius = (imgView.frame.size.width ) / 2
         
         self.contentView.startShimmeringViewAnimation()
-        
-    }
-    
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
     }
     
     
