@@ -9,10 +9,6 @@ import Alamofire
 
 class RepoListService {
     
-    static var shared = RepoListService()
-    
-    private init(){}
-    
     func getRepoListData<T>(completion: @escaping (T?, _ error: String?)->()) where T: Codable {
         
         if !NetworkReachability.isConnectedToNetwork(){

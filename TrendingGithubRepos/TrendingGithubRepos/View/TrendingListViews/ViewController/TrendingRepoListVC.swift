@@ -16,7 +16,7 @@ class TrendingRepoListVC: UIViewController, UITableViewDataSource, UITableViewDe
     let refreshControl = UIRefreshControl()
     var isPullToRefresh = false
     var repoListModel: GithubReposListModel?
-    private let githubRepoPresenter = GithubRepoPresenter(repoListService: RepoListService.shared)
+    private let githubRepoPresenter = GithubRepoPresenter(repoListService: RepoListService())
     
     //MARK: - setting up viewDidLoad
     override func viewDidLoad() {

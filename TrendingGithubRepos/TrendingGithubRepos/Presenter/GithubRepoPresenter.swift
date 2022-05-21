@@ -15,7 +15,7 @@ protocol RepoListViewDelegate: NSObjectProtocol {
 class GithubRepoPresenter {
     
     //MARK: - Data Members
-    private let repoListService: RepoListService?
+    private let repoListService: RepoListService!
     weak var repoListViewDelegate : RepoListViewDelegate?
     
     //MARK: - Presenter init()
@@ -25,7 +25,7 @@ class GithubRepoPresenter {
     
     //MARK: - API hit to get the list
     func fetchGitRepoList(){
-        RepoListService.shared.getRepoListData(completion: { [weak self] (repoListResponse: GithubReposListModel?, message: String?) in
+        repoListService.getRepoListData(completion: { [weak self] (repoListResponse: GithubReposListModel?, message: String?) in
             if let dataModel = repoListResponse{
                 self?.repoListViewDelegate?.displayRepoData(model: dataModel, msg: nil)
             }else{
